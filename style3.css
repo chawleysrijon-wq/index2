@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    border: 2px solid black;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    align-items: center;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    margin: 0 10px;
+}
+
+/* Hero */
+
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    border-bottom: 2px solid black;
+}
+
+.hero h1 {
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    color: gray;
+}
+
+/* Main Section */
+
+.main {
+    display: flex;
+    border-bottom: 2px solid black;
+}
+
+.projects,
+.work,
+.education {
+    width: 33.33%;
+    border-right: 2px solid black;
+}
+
+.education {
+    border-right: none;
+}
+
+.projects h2,
+.work h2,
+.education h2 {
+    padding: 20px;
+}
+
+.item {
+    border-top: 2px solid black;
+    padding: 20px;
+}
+
+.box {
+    padding: 20px;
+    border-bottom: 2px solid black;
+}
+
+.education {
+    padding: 20px;
+}
+
+.education ul {
+    padding-left: 20px;
+}
+
+/* Reviews */
+
+.reviews {
+    padding: 30px;
+}
+
+.review-boxes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.review {
+    width: 28%;
+    border: 2px solid black;
+    border-radius: 30px;
+    padding: 25px;
+}
+
+.review span {
+    color: gray;
+}

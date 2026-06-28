@@ -1,21 +1,77 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Layout Design</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireframe Layout</title>
+    <style>
+        /* Modern Reset and Centering */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #ffffff;
+        }
+
+        /* Container matching the exact layout proportions */
+        .container {
+            width: 740px;
+            height: 270px;
+            border: 2px solid #000000;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: 1.3fr 1.9fr 1.3fr 2fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 20px;
+        }
+
+        /* Inner Boxes */
+        .box {
+            border: 2px solid #000000;
+            background-color: #ffffff;
+        }
+
+        /* Positions */
+        .box-top-left {
+            grid-column: 1 / 3;
+            grid-row: 1 / 2;
+        }
+
+        .box-top-mid {
+            grid-column: 3 / 4;
+            grid-row: 1 / 2;
+        }
+
+        .box-right {
+            grid-column: 4 / 5;
+            grid-row: 1 / 3;
+        }
+
+        .box-bot-left {
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+        }
+
+        .box-bot-mid {
+            grid-column: 2 / 4;
+            grid-row: 2 / 3;
+        }
+    </style>
 </head>
 <body>
-
     <div class="container">
-
-        <div class="box box1">1</div>
-        <div class="box box2">2</div>
-        <div class="box box3">3</div>
-
-        <div class="box box4">4</div>
-        <div class="box box5">5</div>
-
+        <div class="box box-top-left"></div>
+        <div class="box box-top-mid"></div>
+        <div class="box box-right"></div>
+        <div class="box box-bot-left"></div>
+        <div class="box box-bot-mid"></div>
     </div>
-
 </body>
 </html>
